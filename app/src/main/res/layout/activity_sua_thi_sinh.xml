@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuaThiSinh"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa thông tin thí sinh"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        />
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/edtMaThiSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã thí sinh"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        />
+    <EditText
+        android:id="@+id/edtTenThiSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thí sinh"
+        android:layout_marginTop="10dp"
+        />
+    <Spinner
+        android:id="@+id/spnLop"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

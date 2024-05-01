@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.thitracnghiem.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_thisinh"
+        android:name="com.example.thitracnghiem.FThiSinh"
+        android:label="fragment_thi_sinh"
+        tools:layout="@layout/fragment_thi_sinh" />
+    <fragment
+        android:id="@+id/nav_lop"
+        android:name="com.example.thitracnghiem.LopHoc"
+        android:label="fragment_lop"
+        tools:layout="@layout/fragment_lop" />
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.example.thitracnghiem.Test"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/nav_dethi"
+        android:name="com.example.thitracnghiem.FDeThi"
+        android:label="fragment_f_de_thi"
+        tools:layout="@layout/fragment_f_de_thi" />
+    <fragment
+        android:id="@+id/nav_monhoc"
+        android:name="com.example.thitracnghiem.FMonHoc"
+        android:label="fragment_f_mon_hoc"
+        tools:layout="@layout/fragment_f_mon_hoc" />
+    <fragment
+        android:id="@+id/nav_cauhoi"
+        android:name="com.example.thitracnghiem.FCauHoi"
+        android:label="fragment_f_cau_hoi"
+        tools:layout="@layout/fragment_f_cau_hoi" />
+</navigation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/house_solid"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_lop"
+            android:icon="@drawable/door_closed_solid"
+            android:title="Lớp" />
+        <item
+            android:id="@+id/nav_thisinh"
+            android:icon="@drawable/user_solid"
+            android:title="Thí sinh" />
+        <item
+            android:id="@+id/nav_dethi"
+            android:icon="@drawable/user_solid"
+            android:title="Đề thi" />
+
+
+        <item
+            android:id="@+id/nav_monhoc"
+            android:icon="@drawable/user_solid"
+            android:title="Môn học" />
+        <item
+            android:id="@+id/nav_cauhoi"
+            android:icon="@drawable/user_solid"
+            android:title="Câu hỏi" />
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/user_solid"
+            android:title="Test" />
+    </group>
+</menu>
