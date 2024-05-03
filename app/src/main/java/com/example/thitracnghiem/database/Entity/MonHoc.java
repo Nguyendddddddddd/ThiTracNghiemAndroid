@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity
-public class MonHoc {
+public class MonHoc implements Serializable {
     @PrimaryKey
     @NonNull
     private String MaMH;

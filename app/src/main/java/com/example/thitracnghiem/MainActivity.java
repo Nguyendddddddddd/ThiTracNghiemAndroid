@@ -136,6 +136,10 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Thông tin",k.getNgayThi()==null?"null":"co thi");
 
         });*/
+
+//        TaiKhoan tk = new TaiKhoan("tk","1",0);
+//        db.taiKhoanDAO().insert(tk);
+
     }
 
 

@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThiTracNghiem"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            />
+
+        <activity
+            android:name=".ThemCauHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuaMonHoc"
+            android:exported="false" />
+
         <activity
             android:name=".ChiTietDeThiActivity"
             android:exported="false" />
