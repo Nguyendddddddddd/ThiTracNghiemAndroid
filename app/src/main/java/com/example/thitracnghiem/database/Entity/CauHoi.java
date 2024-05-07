@@ -5,8 +5,10 @@ import androidx.annotation.Size;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity
-public class CauHoi {
+public class CauHoi implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int MaCauHoi;
     private String NoiDung;
@@ -17,6 +19,12 @@ public class CauHoi {
         NoiDung = noiDung;
         MaMon = maMon;
     }
+
+    public CauHoi(String noiDung, String maMon) {
+        NoiDung = noiDung;
+        MaMon = maMon;
+    }
+
     public CauHoi() {
 
     }

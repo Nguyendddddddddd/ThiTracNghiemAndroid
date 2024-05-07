@@ -10,18 +10,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/btnXoaCauHoi"
+        android:layout_toStartOf="@+id/btnXoaDeThi"
         >
         <TextView
-            android:id="@+id/tvNoiDungCauHoi"
+            android:id="@+id/tvTenDe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textStyle="bold"
+            android:text="Tên đề"
+            />
+        <TextView
+            android:id="@+id/tvThoiGianLamBai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian làm bài"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tvTongSoCau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số câu"
+            android:layout_marginTop="8dp"
             />
     </LinearLayout>
     <Button
-        android:id="@+id/btnCapNhatCauHoi"
+        android:id="@+id/btnCapNhatDeThi"
         android:text="Cập nhật"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
@@ -31,12 +44,12 @@
         android:textSize="12sp"
         />
     <Button
-        android:id="@+id/btnXoaCauHoi"
+        android:id="@+id/btnXoaDeThi"
         android:text="Xóa"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/btnCapNhatCauHoi"
+        android:layout_toStartOf="@+id/btnCapNhatDeThi"
         android:textSize="12sp"
         />
 </RelativeLayout>

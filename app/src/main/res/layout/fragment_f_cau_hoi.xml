@@ -41,13 +41,14 @@
         <ListView
             android:id="@+id/lsvCauHoi"
             android:layout_width="match_parent"
-            android:layout_height="376dp"
+            android:layout_height="459dp"
             android:layout_marginTop="8dp"
+
             />
 
         <Button
             android:id="@+id/btnThemCauHoi"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Thêm câu hỏi"

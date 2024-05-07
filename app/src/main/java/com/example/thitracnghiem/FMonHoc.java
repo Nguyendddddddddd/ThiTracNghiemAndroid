@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.example.thitracnghiem.Adapter.AdapterLopHoc;
 import com.example.thitracnghiem.Adapter.AdapterMonHoc;
 import com.example.thitracnghiem.database.DBThiTracNghiem;
+import com.example.thitracnghiem.database.Entity.DeThi;
 import com.example.thitracnghiem.database.Entity.Lop;
 import com.example.thitracnghiem.database.Entity.MonHoc;
 

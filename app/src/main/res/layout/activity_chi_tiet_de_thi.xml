@@ -6,11 +6,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChiTietDeThiActivity"
+    android:layout_margin="16dp"
     android:orientation="vertical">
-
-    <androidx.cardview.widget.CardView
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="Chi tiết đề thi"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        />
 
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvMaDeThiCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã đề thi:"
+        android:textSize="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        />
+    <TextView
+        android:id="@+id/tvTenDeThiCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên đề thi:"
+        android:textSize="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    <TextView
+        android:id="@+id/tvMaMonCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã môn:"
+        android:textSize="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    <TextView
+        android:id="@+id/tvThoiGianLamBaiCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian làm bài:"
+        android:textSize="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTongSoCauCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng số câu hỏi:"
+        android:textSize="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        />
+
+    <Button
+        android:id="@+id/btnThemCauHoiVaoDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm câu hỏi"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách câu hỏi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+
+    <ListView
+        android:id="@+id/lsvDSCauHoiDeThi"
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        android:layout_marginTop="15dp" />
+
+
 </LinearLayout>

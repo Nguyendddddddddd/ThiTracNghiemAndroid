@@ -10,19 +10,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/btnXoaCauHoi"
+        android:layout_toStartOf="@+id/btnThemCauHoiVaoDeThi"
         >
         <TextView
-            android:id="@+id/tvNoiDungCauHoi"
+            android:id="@+id/tvMaCauHoiCT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textStyle="bold"
+            android:text="Mã câu hỏi"
             />
+        <TextView
+            android:id="@+id/tvNoiDungCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung"
+            android:layout_marginTop="8dp"
+            />
+
     </LinearLayout>
     <Button
-        android:id="@+id/btnCapNhatCauHoi"
-        android:text="Cập nhật"
+        android:id="@+id/btnThemCauHoiVaoDeThi"
+        android:text="Thêm"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,13 +37,5 @@
         android:layout_marginLeft="4dp"
         android:textSize="12sp"
         />
-    <Button
-        android:id="@+id/btnXoaCauHoi"
-        android:text="Xóa"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/btnCapNhatCauHoi"
-        android:textSize="12sp"
-        />
+
 </RelativeLayout>

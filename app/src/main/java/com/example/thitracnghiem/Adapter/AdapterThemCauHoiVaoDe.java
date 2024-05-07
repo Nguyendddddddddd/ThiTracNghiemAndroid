@@ -7,32 +7,28 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.thitracnghiem.R;
 import com.example.thitracnghiem.database.Entity.CauHoi;
-import com.example.thitracnghiem.database.Entity.ThiSinh;
-
 
 import java.util.List;
 
-public class AdapterCauHoi extends ArrayAdapter<CauHoi> {
+public class AdapterThemCauHoiVaoDe extends ArrayAdapter<CauHoi> {
     private Activity Context;
     private int IdLayout;
     private List<CauHoi> LstCauHoi;
-    public IClickUpdate UpdateCauHoi;
-
-    public interface IClickUpdate {
-        void clickUpdate(CauHoi cauHoi);
-
-        void clickDelete(CauHoi cauHoi);
-
+    public IClickInsert InsertCauHoi;
+    public interface IClickInsert {
+        void clickInsert(CauHoi cauHoi);
     }
-    public AdapterCauHoi(Activity context, int idLayout, List<CauHoi> lstCauHoi, AdapterCauHoi.IClickUpdate updateCauHoi) {
+
+    public AdapterThemCauHoiVaoDe(Activity context, int idLayout, List<CauHoi> lstCauHoi, AdapterThemCauHoiVaoDe.IClickInsert insertCauHoi) {
         super(context, idLayout, lstCauHoi);
-        this.UpdateCauHoi = updateCauHoi;
+        this.InsertCauHoi = insertCauHoi;
         this.Context = context;
         this.IdLayout = idLayout;
         this.LstCauHoi = lstCauHoi;
@@ -43,25 +39,20 @@ public class AdapterCauHoi extends ArrayAdapter<CauHoi> {
         LayoutInflater inflater = Context.getLayoutInflater();
         convertView = inflater.inflate(IdLayout, null);
         CauHoi cauHoi = LstCauHoi.get(position);
-        TextView tvNoiDungCH = convertView.findViewById(R.id.tvNoiDungCauHoi);
-        Button btnCapNhatCH = convertView.findViewById(R.id.btnCapNhatCauHoi);
-        Button btnXoaCH = convertView.findViewById(R.id.btnXoaCauHoi);
-        btnCapNhatCH.setOnClickListener(new View.OnClickListener() {
+        TextView tvMaCauHoi = convertView.findViewById(R.id.tvMaCauHoiCT);
+        TextView tvNoiDungCT = convertView.findViewById(R.id.tvNoiDungCT);
+        Button btnThemCauHoiVaoDe = convertView.findViewById(R.id.btnThemCauHoiVaoDeThi);
+        btnThemCauHoiVaoDe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                UpdateCauHoi.clickUpdate(cauHoi);
-            }
-        });
-        btnXoaCH.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UpdateCauHoi.clickDelete(cauHoi);
+                InsertCauHoi.clickInsert(cauHoi);
             }
         });
 
-        tvNoiDungCH.setText(cauHoi.getNoiDung());
+        tvMaCauHoi.setText("Mã câu hỏi: "+cauHoi.getMaCauHoi());
+        tvNoiDungCT.setText("Nội dung: "+cauHoi.getNoiDung());
+
         return convertView;
     }
-
 
 }

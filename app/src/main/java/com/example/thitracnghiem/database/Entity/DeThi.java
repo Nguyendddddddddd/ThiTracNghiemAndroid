@@ -5,10 +5,11 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class DeThi {
+public class DeThi implements Serializable {
     @PrimaryKey
     @NonNull
     private String MaDe;

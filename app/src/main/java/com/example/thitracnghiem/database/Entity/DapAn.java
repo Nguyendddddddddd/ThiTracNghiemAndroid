@@ -18,6 +18,12 @@ public class DapAn {
         DungSai = dungSai;
         MaCauHoi = maCauHoi;
     }
+    public DapAn(String noiDung, boolean dungSai, int maCauHoi) {
+        this.noiDung = noiDung;
+        DungSai = dungSai;
+        MaCauHoi = maCauHoi;
+    }
+
     public DapAn() {
     }
 
